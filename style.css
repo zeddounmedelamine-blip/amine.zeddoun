@@ -1,5 +1,12 @@
+body {
+  background-color: #cce6ff; /* أزرق فاتح */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+}
 
-
-a:hover {
-  background-color: #005fa3;
+h1 {
+  color: #003366; /* أزرق غامق */
+  font-size: 32px;
 }
