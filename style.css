@@ -2,25 +2,28 @@ body {
   background-color: #cce6ff;
   font-family: 'Arial', sans-serif;
   text-align: center;
-  padding-top: 100px;
+  padding: 50px 20px;
   margin: 0;
 }
 
 h1 {
   color: #003366;
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 40px;
 }
 
 .button {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 18px 35px;
   background-color: #007acc;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 8px;
+  font-size: 18px;
+  border-radius: 10px;
   transition: background 0.3s;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 .button:hover {
