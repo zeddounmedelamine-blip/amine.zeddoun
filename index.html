@@ -9,5 +9,67 @@
   <h1>موقع الأستاذ زدون محمد الأمين الإلكتروني</h1>
 
   <a href="#" class="button">الوحدة (00): مراجعة المكتسبات القبلية</a>
+
+  <div class="datetime">
+    <div id="date"></div>
+    <div id="clock"></div>
+    <div id="moon-phase"></div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    function updateDate() {
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = (now.getMonth() + 1).toString().padStart(2, '0');
+      const day = now.getDate().toString().padStart(2, '0');
+      document.getElementById('date').textContent = `${year}-${month}-${day}`;
+    }
+
+    function getMoonPhase() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = today.getMonth() + 1;
+      const day = today.getDate();
+      const lp = 2551443;
+      const now = new Date(year, month - 1, day, 20, 35, 0);
+      const new_moon = new Date(1970, 0, 7, 20, 35, 0);
+      const phase = ((now.getTime() - new_moon.getTime()) / 1000) % lp;
+      const age = Math.floor((phase / (24 * 3600)) + 1);
+
+      let description = "";
+      if (age === 1) {
+        description = "🌑 المحاق";
+      } else if (age < 7) {
+        description = "🌒 الهلال المتزايد";
+      } else if (age === 7) {
+        description = "🌓 التربيع الأول";
+      } else if (age < 14) {
+        description = "🌔 الأحدب المتزايد";
+      } else if (age === 14) {
+        description = "🌕 البدر";
+      } else if (age < 21) {
+        description = "🌖 الأحدب المتناقص";
+      } else if (age === 21) {
+        description = "🌗 التربيع الأخير";
+      } else {
+        description = "🌘 الهلال المتناقص";
+      }
+
+      document.getElementById('moon-phase').textContent = `حالة القمر اليوم: ${description}`;
+    }
+
+    updateClock();
+    updateDate();
+    getMoonPhase();
+    setInterval(updateClock, 1000);
+  </script>
 </body>
 </html>
