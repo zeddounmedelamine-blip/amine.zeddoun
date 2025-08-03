@@ -1,5 +1,5 @@
 body {
-  background-color: #cce6ff; /* أزرق فاتح */
+  background-color: #cce6ff;
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding-top: 100px;
@@ -7,6 +7,22 @@ body {
 }
 
 h1 {
-  color: #003366; /* أزرق غامق */
+  color: #003366;
   font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #005fa3;
 }
