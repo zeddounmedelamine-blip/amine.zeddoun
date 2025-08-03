@@ -18,17 +18,18 @@ h1 {
 .button {
   display: inline-block;
   padding: 18px 35px;
-  background-color: #007acc;
-  color: white;
+  background-color: #3366cc; /* أزرق ناعم ومتناسق */
+  color: #f9f9f9; /* خط أفتح */
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 10px;
   transition: background 0.3s;
-  width: 90%;
-  max-width: 300px;
+  width: auto;
+  max-width: 100%;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .button:hover {
-  background-color: #005fa3;
+  background-color: #254b9c;
 }
