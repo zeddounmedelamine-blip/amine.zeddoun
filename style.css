@@ -1,74 +1,41 @@
+
 body {
-  background-color: #cce6ff;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  padding: 50px 20px;
-  margin: 0;
+    background-color: #cce6ff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
 }
 
 h1 {
-  font-size: 36px;
-  color: #002b80;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  margin-bottom: 40px;
-  padding: 0 15px;
-  line-height: 1.6;
+    color: #003366;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.button {
-  display: inline-block;
-  padding: 18px 35px;
-  background-color: #3366cc;
-  color: #f9f9f9;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 10px;
-  transition: background 0.3s;
-  width: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  white-space: nowrap;
-  margin-bottom: 30px;
+p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.button:hover {
-  background-color: #254b9c;
+a.custom-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
-.datetime {
-  font-size: 18px;
-  color: #003366;
-  margin-top: 20px;
-  line-height: 1.8;
-}
-
-
-.subtitle {
-  font-size: 20px;
-  color: #004080;
-  margin-top: -20px;
-  margin-bottom: 40px;
-  padding: 0 15px;
-  line-height: 1.6;
-}
-
-
-.back-button {
-  background-color: #009688;
-}
-
-.back-button:hover {
-  background-color: #00796b;
-}
-
-
-.pdf-link {
-  margin-top: 40px;
-  font-size: 18px;
-}
-
-.pdf-link a {
-  color: #003366;
-  text-decoration: underline;
-  font-weight: bold;
+a.return-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2e8b57;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
 }
