@@ -60,3 +60,15 @@ h1 {
 .back-button:hover {
   background-color: #00796b;
 }
+
+
+.pdf-link {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.pdf-link a {
+  color: #003366;
+  text-decoration: underline;
+  font-weight: bold;
+}
